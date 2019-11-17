@@ -1,0 +1,3 @@
+ACTION=="add", KERNEL=="sdd1", SUBSYSTEM=="block", ATTRS{serial}!= "57584631454237314E415429", RUN+="/bin/udev.sh"
+
+ACTION=="remove", KERNEL=="sdd1", SUBSYSTEM=="block", ATTRS{serial}!= "57584631454237314E415429", RUN+="/bin/device_removed.sh"
