@@ -9,12 +9,12 @@
 
 
    - mail:
-      body: "Unrecognized device attached on {{ansible_date_time.date}} at {{ansible_date_time.time}}<br>You can check logs in /tmp/devices.log"
-      from: '500052872@stu.upes.ac.in'
-      username: '500052872@stu.upes.ac.in'
+      body: "Unrecognized device attached on {{ansible_date_time.date}} at {{ansible_date_time.time}}. You can check logs in /tmp/devices.log"
+      from: ''
+      username: ''
       password: "{{ password }}"
       subject: "Security alert!"
-      to: 'akijain058@gmail.com'
+      to: ''
       host: smtp.gmail.com
       port: 587
       attach: '/my.jpg'
