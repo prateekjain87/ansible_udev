@@ -13,7 +13,7 @@
 * "lsblk" command can be used to know the device_name 
 
 
-# Make a ansible vault file "secret.yml" to store your email password in dictionary format:
+# Make a ansible vault file "secret.yml" to store your email password in given dictionary format:
 password: your_password
 and provide the path in "include_vars" attribute in "mail.yml".
 
